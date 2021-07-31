@@ -2,6 +2,7 @@ extends ../base/layout
 
 block data
   include ../data/intro
+  include ../data/series
 
 block variables
   - const title = "Platforma Home" //- на страницах кроме главной используйте О нас — ProjectName
@@ -22,5 +23,14 @@ block main
           .intro__logo
             img(src="img/svg/logo-intro.svg" width="617" height="50" alt="Логотип Platforma Home")
           h1.intro__title=intro.title
+
+    section.series
+      .container
+        .series__intro
+          h2.series__title=series.title
+          p.series__desc=series.desc
+          a.link.link--accent.series__see-all-link(href=series.seeAllLink.href)=series.seeAllLink.text
+        .series__slider
+          +series-slider(series.slides)
 
 block modals

@@ -1,0 +1,43 @@
+.series {
+  padding: 165px 0 200px;
+}
+
+.series__intro {
+  max-width: 510px;
+  margin-bottom: 70px;
+}
+
+.series__title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.1;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.series__desc {
+  margin: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.series__see-all-link {
+  position: relative;
+  z-index: 2;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-transform: uppercase;
+  color: $color-pacific-blue-2;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

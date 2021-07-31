@@ -1,8 +1,6 @@
 const initIntroSlider = () => {
   const sliders = document.querySelectorAll('.intro-slider');
 
-  console.log(sliders);
-
   if (!sliders) {
     return;
   }
@@ -19,7 +17,7 @@ const initIntroSlider = () => {
         clickable: true,
       },
       autoplay: {
-        delay: 4000,
+        delay: 6000,
         disableOnInteraction: false,
       },
     });
