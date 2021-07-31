@@ -20,24 +20,22 @@
     <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-close" viewBox="0 0 20 20"><path d="M.293 18.291a1 1 0 101.414 1.414L10 11.413l8.292 8.292a1 1 0 101.414-1.414l-8.292-8.292 8.292-8.292A1 1 0 1018.291.293L9.999 8.585 1.707.293A1 1 0 10.293 1.707L8.585 10 .293 18.291z"/></symbol></svg></div>
     <div class="wrapper">
       <header class="header">
-        <div class="header__wrapper"><a class="header__logo" href="main.html" aria-label="Переход на главную">Логотип</a>
+        <div class="container header__container"><a class="header__logo" href="main.html" aria-label="Переход на главную"><img src="img/svg/logo-header.svg" width="200" height="111" alt="Логотип Platforma Home"></a>
           <nav class="main-nav">
-            <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-              <svg width="20" height="20" aria-hidden="true">
-                <use xlink:href="#icon-burger"></use>
-              </svg>
-            </button>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Страница 1</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Страница 2</a>
-                </li>
-                <li class="main-nav__item"><a class="main-nav__link" href="#">Страница 3</a>
-                </li>
+                <li class="main-nav__item"><a class="link main-nav__link" href="#">Концепция</a></li>
+                <li class="main-nav__item"><a class="link main-nav__link" href="#">Серии</a></li>
+                <li class="main-nav__item"><a class="link main-nav__link" href="#">Проекты</a></li>
+                <li class="main-nav__item"><a class="link main-nav__link" href="#">Блог</a></li>
+                <li class="main-nav__item"><a class="link main-nav__link" href="#">Контакты</a></li>
               </ul>
             </div>
           </nav>
+          <ul class="header__contact-list">
+            <li class="header__contact-item"><a class="link header__contact-link" href="tel:+78123364500">+7 (812) 336-45-00</a></li>
+            <li class="header__contact-item"><a class="link link--accent header__contact-link" href="#">Обратиться к нам</a></li>
+          </ul>
         </div>
       </header>
       <style>

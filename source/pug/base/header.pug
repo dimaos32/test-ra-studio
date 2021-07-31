@@ -3,32 +3,44 @@ mixin header(headerMods, currentPage)
     var headerLinks = [
       {
         href: "#",
-        text: "Страница 1"
+        text: "Концепция"
       },
       {
         href: "#",
-        text: "Страница 2"
+        text: "Серии"
       },
       {
         href: "#",
-        text: "Страница 3"
+        text: "Проекты"
+      },
+      {
+        href: "#",
+        text: "Блог"
+      },
+      {
+        href: "#",
+        text: "Контакты"
       },
     ]
 
   header.header(class=headerMods)
-    .header__wrapper
+    .container.header__container
       if(currentPage === "main")
-        a.header__logo Логотип
+        a.header__logo
+          img(src="img/svg/logo-header.svg" width="200" height="111" alt="Логотип Platforma Home")
       else
-        a.header__logo(href="main.html", aria-label="Переход на главную") Логотип
+        a.header__logo(href="main.html", aria-label="Переход на главную")
+          img(src="img/svg/logo-header.svg" width="200" height="111" alt="Логотип Platforma Home")
       nav.main-nav
-        button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
-          +icon("icon-burger", 20, 20)
+        //- button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+        //-   +icon("icon-burger", 20, 20)
         .main-nav__wrapper
           ul.main-nav__list
-            each link, index in headerLinks
+            each link in headerLinks
               li.main-nav__item
-                if(index === currentPage)
-                  a.main-nav__link.main-nav__link--active=link.text
-                else
-                  a.main-nav__link(href=link.href)=link.text
+                a.link.main-nav__link(href=link.href)=link.text
+      ul.header__contact-list
+        li.header__contact-item
+          a.link.header__contact-link(href="tel:+78123364500") +7 (812) 336-45-00
+        li.header__contact-item
+          a.link.link--accent.header__contact-link(href="#") Обратиться к нам

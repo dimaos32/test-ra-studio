@@ -1,5 +1,22 @@
-.main-nav {
-  &__toggle {
-    display: none;
-  }
+.main-nav__list {
+  @include reset-list;
+
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0 -20px;
+  padding-top: 10px;
+}
+
+.main-nav__item {
+  padding: 0 20px;
+}
+
+.main-nav__link {
+  padding: 5px 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
 }

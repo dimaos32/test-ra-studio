@@ -1,0 +1,29 @@
+.link {
+  color: $color-night-rider;
+  outline: none;
+  transition:
+    color $trans--300,
+    opacity $trans--300;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &[href]:hover,
+    &:focus {
+      color: $color-pacific-blue;
+    }
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+
+  &--accent {
+    color: $color-pacific-blue;
+
+    @media (hover: hover), screen and (min-width: 0\0) {
+      &[href]:hover,
+      &:focus {
+        color: $color-night-rider;
+      }
+    }
+  }
+}
