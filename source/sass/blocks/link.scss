@@ -16,6 +16,10 @@
     opacity: 0.7;
   }
 
+  &--inverted {
+    color: $color-default-white;
+  }
+
   &--accent {
     color: $color-pacific-blue;
 

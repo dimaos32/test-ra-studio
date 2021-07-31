@@ -1,2 +1,42 @@
 mixin footer(footerMods)
   footer.footer(class=footerMods)
+    .container.footer__container
+      .footer__official
+        if(currentPage === "main")
+          a.footer__logo
+            img(src="img/svg/logo-footer.svg" width="200" height="111" alt="Логотип Platforma Home")
+        else
+          a.footer__logo(href="index.html", aria-label="Переход на главную")
+            img(src="img/svg/logo-footer.svg" width="200" height="111" alt="Логотип Platforma Home")
+        p.footer__name=footer.name
+        p.footer__inn=footer.inn
+      ul.footer__contacts
+        each link in footer.contacts
+          - const {href, text, icon} = link
+          li.footer__contacts-item
+            if link.isExternal
+              a.link.link--inverted.footer__contacts-link(href=href target="_blank" rel="nofollow noopener")
+                span.footer__contacts-icon
+                  +icon(icon.name, icon.width, icon.heigth)
+                span=text
+            else
+              a.link.link--inverted.footer__contacts-link(href=href)
+                span.footer__contacts-icon
+                  +icon(icon.name, icon.width, icon.heigth)
+                span=text
+      ul.footer__social
+        each link in footer.social
+          - const {href, text, icon} = link
+          li.footer__social-item
+            a.link.footer__social-link(href=href target="_blank" rel="nofollow noopener" aria-label=text)
+              +icon(icon.name, icon.width, icon.heigth)
+      ul.footer__other
+        each link in footer.other
+          - const {href, text} = link
+          - const mod = link.mod ? `footer__other-link--${link.mod}` : ""
+          li.footer__other-item
+            if link.isExternal
+              a.link.link--inverted.footer__other-link(class=mod href=href target="_blank" rel="nofollow noopener")=text
+            else
+              a.link.link--inverted.footer__other-link(class=mod href=href)=text
+
