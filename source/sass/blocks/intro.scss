@@ -1,0 +1,32 @@
+.intro {
+  position: relative;
+
+  min-height: 600px;
+}
+
+.intro__page-title {
+  position: absolute;
+  top: 207px;
+  z-index: 2;
+
+  width: calc(100% - 2 * 40px);
+}
+
+.intro__logo {
+  width: fit-content;
+  margin: 0 auto 30px;
+
+  img {
+    width: 100%;
+    max-width: 617px;
+  }
+}
+
+.intro__title {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.21;
+  text-align: center;
+}

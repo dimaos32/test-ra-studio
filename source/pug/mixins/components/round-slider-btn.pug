@@ -1,0 +1,5 @@
+mixin round-slider-btn(isNext = false)
+  -const directionClass = isNext ? "next" : "prev"
+  -const ariaLabel = isNext ? "Следующий слайд" : "Предыдущий слайд"
+  button.round-slider-btn(class=directionClass type="button" aria-label=ariaLabel)
+    +icon("icon-arrow", 21, 12)

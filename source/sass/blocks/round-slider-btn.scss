@@ -1,0 +1,37 @@
+.round-slider-btn {
+  @include reset-btn;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  color: $color-default-white;
+
+  background-color: $color-night-rider;
+  border-radius: 50%;
+
+  svg {
+    width: 21px;
+    height: 12px;
+  }
+
+  &.next {
+    svg {
+      transform: rotate(180deg)
+    }
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      color: $color-pacific-blue;
+    }
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
