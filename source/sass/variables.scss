@@ -19,10 +19,7 @@ $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0
 // Typography
 //---------------------------------
 
-$font-family--placeholder:          "", "Arial", sans-serif;
-
-// https://www.artlebedev.ru/kovodstvo/sections/159/
-$font-family--rouble:               "Rouble", "Arial", sans-serif;
+$font-family--montserrat:          "Montserrat", "Arial", sans-serif;
 
 // Animation
 //---------------------------------
@@ -33,13 +30,7 @@ $trans--600:                        0.6s cubic-bezier(0.55, 0, 0.1, 1);
 // Viewports
 //---------------------------------
 
-$vp--320:                           320px;
-$vp--375:                           375px;
-$vp--768:                           768px;
-$vp--1024:                          1024px;
-$vp--1280:                          1280px;
-$vp--1440:                          1440px;
-$vp--1920:                          1920px;
+$vp--1680:                          1680px;
 
 // Retina
 //---------------------------------
