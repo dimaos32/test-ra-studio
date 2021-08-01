@@ -20,6 +20,7 @@
 @import "blocks/header";
 @import "blocks/link";
 @import "blocks/btn-round";
+@import "blocks/citation";
 @import "blocks/main-nav";
 @import "blocks/footer";
 @import "blocks/modal";
@@ -29,6 +30,8 @@
 @import "blocks/series";
 @import "blocks/series-slider";
 @import "blocks/video";
+@import "blocks/custom-design";
+@import "blocks/custom-design-slider";
 
 // используйте это для отключения ховеров на тач устройствах
 // ! но не используйте это для текстовых полей ( input, textarea )

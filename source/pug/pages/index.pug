@@ -4,6 +4,7 @@ block data
   include ../data/intro
   include ../data/series
   include ../data/video
+  include ../data/custom-design
 
 block variables
   - const title = "Platforma Home" //- на страницах кроме главной используйте О нас — ProjectName
@@ -44,5 +45,12 @@ block main
 
     section.custom-design
       .container
+        .custom-design__wrapper
+          .custom-design__slider
+            +custom-design-slider(customDesign.slides)
+          .custom-design__intro
+            h2.custom-design__title=customDesign.title
+            p.custom-design__desc=customDesign.desc
+        p.citation.custom-design__citation=customDesign.citation
 
 block modals

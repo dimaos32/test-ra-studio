@@ -1,0 +1,10 @@
+mixin custom-design-slider(slides)
+  .custom-design-slider
+    .custom-design-slider__wrapper.swiper-container
+      ul.custom-design-slider__slides.swiper-wrapper
+        each slide in slides
+          - const {path, name, type, altText} = slide
+          li.custom-design-slider__slide.swiper-slide
+            +img(path, name, type, 680, 500, altText)
+    .custom-design-slider__controls
+      .custom-design-slider__pagination
