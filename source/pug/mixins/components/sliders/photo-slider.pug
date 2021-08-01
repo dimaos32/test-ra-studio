@@ -1,0 +1,12 @@
+mixin photo-slider(slides)
+  .photo-slider
+    .photo-slider__wrapper.swiper-container
+      ul.photo-slider__slides.swiper-wrapper
+        each slide in slides
+          - const {path, name, type, altText} = slide
+          li.photo-slider__slide.swiper-slide
+            +img(path, name, type, 790, 450, altText)
+    .photo-slider__controls
+      +round-slider-btn(false)
+      +round-slider-btn(true)
+

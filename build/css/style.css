@@ -1485,8 +1485,14 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
   background-color: #ffffff;
   border-right: 1px solid #ffffff;
   border-radius: 50%;
@@ -1499,12 +1505,20 @@ button,
 }
 
 .btn-round--control {
+  width: 100px;
+  height: 100px;
   color: #00a8d0;
 }
 
 .btn-round--control svg {
   width: 15px;
   height: 15px;
+}
+
+.btn-round--inverted {
+  color: #ffffff;
+  background-color: #2d2d2d;
+  border-color: #2d2d2d;
 }
 
 .citation {
@@ -2318,6 +2332,91 @@ button,
   line-height: 1.25;
 }
 
+.exclusive-design {
+  padding: 170px 0 250px;
+}
+
+.exclusive-design__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.exclusive-design__intro {
+  margin-bottom: 50px;
+}
+
+.exclusive-design__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.exclusive-design__title:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.exclusive-design__desc:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.exclusive-design__awards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 65px;
+  margin-right: 45px;
+}
+
+.exclusive-design__award {
+  padding-top: 60px;
+  color: #818181;
+  background-image: url("../img/svg/olive-branches-award.svg");
+  background-size: 45px;
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.exclusive-design__award--not-award {
+  padding-top: 0;
+  background: none;
+}
+
+.exclusive-design__slider {
+  min-width: 0;
+}
+
+.photo-slider {
+  position: relative;
+}
+
+.photo-slider__slides {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.photo-slider__controls .round-slider-btn {
+  position: absolute;
+  top: calc(50% + 25px);
+  z-index: 3;
+}
+
+.photo-slider__controls .round-slider-btn.prev {
+  left: 15px;
+}
+
+.photo-slider__controls .round-slider-btn.next {
+  right: 15px;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -2336,6 +2435,7 @@ button,
     color: #2d2d2d;
   }
 
+  .btn-round:hover,
   .btn-round[href]:hover,
   .btn-round:focus {
     color: #00a2ce;
@@ -2344,8 +2444,16 @@ button,
   .btn-round:hover,
   .btn-round:focus {
     color: #ffffff;
-    border-color: #00a2ce;
     background-color: #00a2ce;
+    border-color: #00a2ce;
+  }
+
+  .btn-round--inverted:hover,
+  .btn-round--inverted[href]:hover,
+  .btn-round--inverted:focus {
+    color: #ffffff;
+    background-color: #00a2ce;
+    border-color: #00a2ce;
   }
 
   .footer__social-link[href]:hover,

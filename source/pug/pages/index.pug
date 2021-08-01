@@ -6,6 +6,7 @@ block data
   include ../data/video
   include ../data/custom-design
   include ../data/production
+  include ../data/exclusive-design
 
 block variables
   - const title = "Platforma Home" //- на страницах кроме главной используйте О нас — ProjectName
@@ -71,5 +72,20 @@ block main
                   if unit
                     span.production__feature-unit=unit
                 p.production__feature-desc=desc
+
+    section.exclusive-design
+      .container.exclusive-design__container
+        .exclusive-design__content
+          .exclusive-design__intro
+            h2.exclusive-design__title=exclusiveDesign.title
+            p.exclusive-design__desc=exclusiveDesign.desc
+          ul.exclusive-design__awards
+            each award in exclusiveDesign.awards
+              li.exclusive-design__award=award
+            li.exclusive-design__award.exclusive-design__award--not-award
+              a.btn-round.btn-round--inverted(href=exclusiveDesign.partner.href)
+                span=exclusiveDesign.partner.text
+        .exclusive-design__slider
+          +photo-slider(exclusiveDesign.slides)
 
 block modals

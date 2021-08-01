@@ -8,6 +8,7 @@ import {initModals} from './modules/modals/init-modals';
 import {initIntroSlider} from './modules/sliders/intro-slider';
 import {initSeriesSlider} from './modules/sliders/series-slider';
 import {initVerticalPhotoSlider} from './modules/sliders/vertical-photo-slider';
+import {initPhotoSlider} from './modules/sliders/photo-slider';
 
 // ---------------------------------
 
@@ -35,6 +36,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     initSeriesSlider();
     initVerticalPhotoSlider();
+    initPhotoSlider();
   });
 });
 

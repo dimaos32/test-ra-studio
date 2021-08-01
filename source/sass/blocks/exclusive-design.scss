@@ -1,0 +1,62 @@
+.exclusive-design {
+  padding: 170px 0 250px;
+}
+
+.exclusive-design__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.exclusive-design__intro {
+  margin-bottom: 50px;
+}
+
+.exclusive-design__title {
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.1;
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.exclusive-design__desc {
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.exclusive-design__awards {
+  @include reset-list;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px 65px;
+
+  margin-right: 45px;
+}
+
+.exclusive-design__award {
+  padding-top: 60px;
+
+  color: $color-grey;
+
+  background-image: url("../img/svg/olive-branches-award.svg");
+  background-size: 45px;
+  background-position: top left;
+  background-repeat: no-repeat;
+
+  &--not-award {
+    padding-top: 0;
+    background: none;
+  }
+}
+
+.exclusive-design__slider {
+  min-width: 0;
+}
