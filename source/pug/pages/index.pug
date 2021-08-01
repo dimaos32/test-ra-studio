@@ -3,6 +3,7 @@ extends ../base/layout
 block data
   include ../data/intro
   include ../data/series
+  include ../data/video
 
 block variables
   - const title = "Platforma Home" //- на страницах кроме главной используйте О нас — ProjectName
@@ -32,5 +33,16 @@ block main
           a.link.link--accent.series__see-all-link(href=series.seeAllLink.href)=series.seeAllLink.text
         .series__slider
           +series-slider(series.slides)
+
+    section.video
+      h2.visually-hidden=video.title
+      .video__wrapper
+        - const {path: coverPath, name: coverName, type: coverType, altText: coverAltText} = video.cover
+        +img(coverPath, coverName, coverType, 1920, 770, coverAltText)
+        button.btn-round.btn-round--control.video__play-btn(type="video" aria-label="Воспроизвести видео")
+          +icon("icon-video-play", 15, 15)
+
+    section.custom-design
+      .container
 
 block modals
