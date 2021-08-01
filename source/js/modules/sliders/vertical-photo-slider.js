@@ -1,16 +1,16 @@
-const initCustomDesignSlider = () => {
-  const sliders = document.querySelectorAll('.custom-design-slider');
+const initVerticalPhotoSlider = () => {
+  const sliders = document.querySelectorAll('.vertical-photo-slider');
 
   if (!sliders) {
     return;
   }
 
   sliders.forEach(() => {
-    const swiper = new Swiper('.custom-design-slider__wrapper', {
+    const swiper = new Swiper('.vertical-photo-slider__wrapper', {
       loop: true,
       direction: 'vertical',
       pagination: {
-        el: '.custom-design-slider__pagination',
+        el: '.vertical-photo-slider__pagination',
         clickable: true,
         renderBullet: (index, className) => {
           return index + 1 < 10 ?
@@ -26,4 +26,4 @@ const initCustomDesignSlider = () => {
   });
 };
 
-export {initCustomDesignSlider};
+export {initVerticalPhotoSlider};

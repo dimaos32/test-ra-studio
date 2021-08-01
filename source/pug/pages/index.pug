@@ -47,10 +47,13 @@ block main
       .container
         .custom-design__wrapper
           .custom-design__slider
-            +custom-design-slider(customDesign.slides)
+            +vertical-photo-slider(customDesign.slides)
           .custom-design__intro
             h2.custom-design__title=customDesign.title
             p.custom-design__desc=customDesign.desc
         p.citation.custom-design__citation=customDesign.citation
+
+    section.production
+      .container
 
 block modals

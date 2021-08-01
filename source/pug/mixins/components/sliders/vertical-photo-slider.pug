@@ -1,0 +1,10 @@
+mixin vertical-photo-slider(slides)
+  .vertical-photo-slider
+    .vertical-photo-slider__wrapper.swiper-container
+      ul.vertical-photo-slider__slides.swiper-wrapper
+        each slide in slides
+          - const {path, name, type, altText} = slide
+          li.vertical-photo-slider__slide.swiper-slide
+            +img(path, name, type, 680, 500, altText)
+    .vertical-photo-slider__controls
+      .vertical-photo-slider__pagination

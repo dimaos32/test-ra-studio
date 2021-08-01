@@ -1,23 +1,23 @@
-.custom-design-slider {
+.vertical-photo-slider {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.custom-design-slider__wrapper {
+.vertical-photo-slider__wrapper {
   flex: 1 1 auto;
 
   height: 500px;
 }
 
-.custom-design-slider__slides {
+.vertical-photo-slider__slides {
   @include reset-list;
 }
 
-.custom-design-slider__controls {
+.vertical-photo-slider__controls {
   flex: 0 0 120px;
 }
 
-.custom-design-slider__pagination {
+.vertical-photo-slider__pagination {
   display: flex;
   flex-direction: column;
   align-items: center;
