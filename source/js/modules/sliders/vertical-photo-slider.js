@@ -5,8 +5,9 @@ const initVerticalPhotoSlider = () => {
     return;
   }
 
-  sliders.forEach(() => {
-    const swiper = new Swiper('.vertical-photo-slider__wrapper', {
+  sliders.forEach((slider) => {
+    const wrapper = slider.querySelectorAll('.vertical-photo-slider__wrapper');
+    const swiper = new Swiper(wrapper, {
       loop: true,
       direction: 'vertical',
       pagination: {

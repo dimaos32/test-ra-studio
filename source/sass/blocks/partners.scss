@@ -20,11 +20,22 @@
 
 .partners__title {
   margin: 0;
-  margin-bottom: 40px;
 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.22;
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.partners__desc {
+  p {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
 
 .partners__list {
