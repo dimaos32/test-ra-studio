@@ -1,3 +1,47 @@
 .partners {
+  padding: 70px 0 90px;
 
+  background-color: $color-white-smoke;
+}
+
+.partners__container {
+  display: flex;
+  align-items: center;
+}
+
+.partners__content {
+  flex: 1 1 50%;
+  align-self: flex-start;
+}
+
+.partners__content-inner {
+  max-width: 615px;
+}
+
+.partners__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+}
+
+.partners__list {
+  @include reset-list;
+
+  flex: 1 1 50%;
+  display: flex;
+
+  margin: 0 -20px;
+}
+
+.partners__item {
+  padding: 10px 70px;
+}
+
+.partners__link {
+  display: block;
+
+  color: $color-suva-grey;
 }

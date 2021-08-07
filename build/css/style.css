@@ -2557,6 +2557,62 @@ input:focus + .ask-cost__label-file {
   flex: 0 0 auto;
 }
 
+.partners {
+  padding: 70px 0 90px;
+  background-color: #f6f6f6;
+}
+
+.partners__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.partners__content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.partners__content-inner {
+  max-width: 615px;
+}
+
+.partners__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+}
+
+.partners__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -20px;
+}
+
+.partners__item {
+  padding: 10px 70px;
+}
+
+.partners__link {
+  display: block;
+  color: #8a8a8a;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
