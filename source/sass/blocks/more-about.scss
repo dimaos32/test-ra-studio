@@ -1,0 +1,37 @@
+.more-about {
+  padding: 150px 0;
+
+  background-color: $color-white-smoke;
+}
+
+.more-about__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.more-about__img {
+  img {
+    width: 100%;
+    max-width: 680px;
+    margin-left: auto;
+  }
+}
+
+.more-about__content {
+  margin-top: 60px;
+  padding-left: 180px;
+}
+
+.more-about__title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.1;
+
+  &:not(:last-child) {
+    margin-bottom: 70px;
+  }
+
+}

@@ -18,21 +18,13 @@
   color: $color-night-rider;
 
   background-color: $color-default-white;
-  border-right: 1px solid $color-default-white;
+  border: 1px solid $color-default-white;
   border-radius: 50%;
 
   transition:
     color $trans--300,
     background-color $trans--300,
     border-color $trans--300;
-
-  @media (hover: hover), screen and (min-width: 0\0) {
-    &:hover,
-    &[href]:hover,
-    &:focus {
-      color: $color-pacific-blue;
-    }
-  }
 
   &--control {
     width: 100px;
@@ -56,6 +48,11 @@
     }
   }
 
+  &--transparent {
+    background-color: $color-transparent;
+    border-color: $color-night-rider;
+  }
+
   &--inverted {
     color: $color-default-white;
 
@@ -66,8 +63,6 @@
       &:hover,
       &[href]:hover,
       &:focus {
-        color: $color-default-white;
-
         background-color: $color-pacific-blue;
         border-color: $color-pacific-blue;
       }

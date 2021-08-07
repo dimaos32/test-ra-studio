@@ -11,6 +11,7 @@ block data
   include ../data/partners
   include ../data/production-about
   include ../data/faq
+  include ../data/more-about
 
 block variables
   - const title = "Platforma Home" //- на страницах кроме главной используйте О нас — ProjectName
@@ -154,5 +155,14 @@ block main
               .faq__question(data-accordion="content")
                 each paragraph in answer
                   p=paragraph
+
+    section.more-about
+      .container.more-about__container
+        .more-about__img
+          +img(moreAbout.img.path, moreAbout.img.name, moreAbout.img.type, 680, 400, moreAbout.img.altText)
+        .more-about__content
+          h2.more-about__title=moreAbout.title
+          a.btn-round.btn-round--transparent(href=moreAbout.btn.href)
+            span=moreAbout.btn.text
 
 block modals
