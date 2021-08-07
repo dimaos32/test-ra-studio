@@ -9,6 +9,7 @@ import {initIntroSlider} from './modules/sliders/intro-slider';
 import {initSeriesSlider} from './modules/sliders/series-slider';
 import {initVerticalPhotoSlider} from './modules/sliders/vertical-photo-slider';
 import {initPhotoSlider} from './modules/sliders/photo-slider';
+import initAccordion from './modules/accordion';
 
 // ---------------------------------
 
@@ -33,6 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+
 
     initSeriesSlider();
     initVerticalPhotoSlider();

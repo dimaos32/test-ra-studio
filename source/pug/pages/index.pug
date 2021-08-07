@@ -10,6 +10,7 @@ block data
   include ../data/ask-cost
   include ../data/partners
   include ../data/production-about
+  include ../data/faq
 
 block variables
   - const title = "Platforma Home" //- на страницах кроме главной используйте О нас — ProjectName
@@ -140,5 +141,18 @@ block main
             h2.production-about__title=productionAbout.title
             each paragraph in productionAbout.desc
               p.production-about__desc=paragraph
+
+    section.faq
+      .container
+        h2.faq__title=faq.title
+        ul.faq__questions(data-accordion="parent", data-type="single")
+          each questionItem in faq.questions
+            - const {question, answer} = questionItem
+            li.faq__question-wrapper(data-accordion="element")
+              button.faq__question-btn(type="button" data-accordion="button")
+                span=question
+              .faq__question(data-accordion="content")
+                each paragraph in answer
+                  p=paragraph
 
 block modals
