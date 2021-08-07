@@ -1493,6 +1493,7 @@ button,
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
+  color: #2d2d2d;
   background-color: #ffffff;
   border-right: 1px solid #ffffff;
   border-radius: 50%;
@@ -2415,6 +2416,145 @@ button,
 
 .photo-slider__controls .round-slider-btn.next {
   right: 15px;
+}
+
+.ask-cost {
+  padding: 130px 0 135px;
+  color: #ffffff;
+  background-color: #2d2d2d;
+}
+
+.ask-cost__title {
+  max-width: 1230px;
+  margin: 0;
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+}
+
+.ask-cost__form {
+  width: 100%;
+  max-width: 1230px;
+}
+
+.ask-cost__input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -30px;
+  margin-bottom: 50px;
+}
+
+.ask-cost__input-group--last {
+  margin-bottom: 40px;
+}
+
+.ask-cost__input {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  padding-right: 30px;
+}
+
+.ask-cost__input input {
+  width: 100%;
+  padding: 8px 0;
+  font: inherit;
+  color: #f6f6f6;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  border-bottom: 2px solid #c4c4c4;
+  outline: none;
+  -webkit-transition: border-color 0.3s ease;
+  transition: border-color 0.3s ease;
+}
+
+.ask-cost__input input::-webkit-input-placeholder {
+  font: inherit;
+  color: #f6f6f6;
+}
+
+.ask-cost__input input::-moz-placeholder {
+  font: inherit;
+  color: #f6f6f6;
+}
+
+.ask-cost__input input:-ms-input-placeholder {
+  font: inherit;
+  color: #f6f6f6;
+}
+
+.ask-cost__input input::-ms-input-placeholder {
+  font: inherit;
+  color: #f6f6f6;
+}
+
+.ask-cost__input input::placeholder {
+  font: inherit;
+  color: #f6f6f6;
+}
+
+.ask-cost__input input:hover,
+.ask-cost__input input:focus {
+  border-color: #00a8d0;
+}
+
+.ask-cost__input-file {
+  margin-bottom: 70px;
+}
+
+.ask-cost__label-file {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.ask-cost__label-file svg {
+  width: 20px;
+  height: 19px;
+}
+
+.ask-cost__label-file span {
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+input:hover + .ask-cost__label-file,
+input:focus + .ask-cost__label-file {
+  color: #00a8d0;
+}
+
+.ask-cost__submit-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 690px;
+}
+
+.ask-cost__submit-annotation {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin-right: 60px;
+  color: #c4c4c4;
+}
+
+.ask-cost__submit-btn {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {

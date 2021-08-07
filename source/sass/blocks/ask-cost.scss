@@ -1,0 +1,114 @@
+.ask-cost {
+  padding: 130px 0 135px;
+
+  color: $color-default-white;
+
+  background-color: $color-night-rider;
+}
+
+.ask-cost__title {
+  max-width: 1230px;
+  margin: 0;
+  margin-bottom: 60px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+}
+
+.ask-cost__form {
+  width: 100%;
+  max-width: 1230px;
+}
+
+.ask-cost__input-group {
+  display: flex;
+  margin-right: -30px;
+  margin-bottom: 50px;
+
+  &--last {
+    margin-bottom: 40px;
+  }
+}
+
+.ask-cost__input {
+  flex: 1 1 100%;
+
+  padding-right: 30px;
+
+  input {
+    width: 100%;
+
+    padding: 8px 0;
+
+    font: inherit;
+    color: $color-white-smoke;
+
+    background-color: $color-transparent;
+    border: none;
+    border-bottom: 2px solid $color-silver;
+    outline: none;
+
+    transition: border-color $trans--300;
+
+    &::placeholder {
+      font: inherit;
+      color: $color-white-smoke;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: $color-pacific-blue-2;
+    }
+  }
+}
+
+.ask-cost__input-file {
+  margin-bottom: 70px;
+}
+
+.ask-cost__label-file {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  transition: color $trans--300;
+
+  svg {
+    width: 20px;
+    height: 19px;
+  }
+
+  span {
+    margin-left: 10px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+
+  input:hover + &,
+  input:focus + & {
+    color: $color-pacific-blue-2;
+  }
+}
+
+.ask-cost__submit-wrapper {
+  display: flex;
+  align-items: center;
+
+  max-width: 690px;
+}
+
+.ask-cost__submit-annotation {
+  flex: 1 1 auto;
+
+  margin-right: 60px;
+
+  color: $color-silver;
+}
+
+.ask-cost__submit-btn {
+  flex: 0 0 auto;
+}

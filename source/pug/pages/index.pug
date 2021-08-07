@@ -7,6 +7,7 @@ block data
   include ../data/custom-design
   include ../data/production
   include ../data/exclusive-design
+  include ../data/ask-cost
 
 block variables
   - const title = "Platforma Home" //- на страницах кроме главной используйте О нас — ProjectName
@@ -39,7 +40,7 @@ block main
 
     section.video
       h2.visually-hidden=video.title
-      .video__wrappervideoCoverType
+      .video__wrapper
         +img(video.cover.path, video.cover.name, video.cover.type, 1920, 770, video.cover.altText)
         button.btn-round.btn-round--control.video__play-btn(type="video" aria-label="Воспроизвести видео")
           +icon("icon-video-play", 15, 15)
@@ -87,5 +88,33 @@ block main
                 span=exclusiveDesign.partner.text
         .exclusive-design__slider
           +photo-slider(exclusiveDesign.slides)
+
+    section.ask-cost
+      .container
+        h2.ask-cost__title=askCost.title
+        .ask-cost__form
+          form(action="#" method="POST")
+            .ask-cost__input-group
+              .ask-cost__input
+                input(type="text" id="user-name" name="user-name" placeholder=askCost.form.name required)
+                label.visually-hidden(for="user-name")=askCost.form.name
+              .ask-cost__input
+                input(type="tel" id="user-phone" name="user-phone" placeholder=askCost.form.phone required)
+                label.visually-hidden(for="user-phone")=askCost.form.phone
+            .ask-cost__input-group.ask-cost__input-group--last
+              .ask-cost__input
+                input(type="text" id="user-messge" name="user-messge" placeholder=askCost.form.messge required)
+                label.visually-hidden(for="user-messge")=askCost.form.messge
+            .ask-cost__input-file
+              input.visually-hidden(type="file" id="user-file" name="user-file")
+              label.ask-cost__label-file(for="user-file")
+                +icon("icon-clip", 20, 19)
+                span=askCost.form.file
+            .ask-cost__submit-wrapper
+              p.ask-cost__submit-annotation=askCost.form.submit.annotation
+              button.btn-round.ask-cost__submit-btn(type="submit")=askCost.form.submit.btnText
+
+    section.partners
+      .container
 
 block modals
