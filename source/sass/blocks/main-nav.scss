@@ -1,16 +1,135 @@
+.main-nav__toggle {
+  @include reset-btn;
+
+  display: none;
+
+  position: relative;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: $color-night-rider;
+  border-radius: 50%;
+
+  @include vp--991 {
+    display: block;
+  }
+}
+
+.main-nav__toggle-line {
+  display: block;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 20px;
+  height: 2px;
+
+  background-color: $color-default-white;
+
+  &--top {
+    transform: translate(-50%, calc(-50% - 6px));
+  }
+
+  &--bottom {
+    transform: translate(-50%, calc(-50% + 6px));
+  }
+}
+
+.main-nav__overlay {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+
+  background-color: rgba($color-night-rider, 0.7);
+
+  @include vp--991 {
+    .main-nav.open & {
+      display: block;
+    }
+  }
+}
+
+.main-nav__wrapper {
+  display: flex;
+
+  @include vp--1299 {
+    display: block;
+  }
+
+  @include vp--991 {
+    visibility: hidden;
+    opacity: 0;
+    overflow-y: auto;
+
+    position: fixed;
+
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    z-index: 12;
+
+    width: (calc(100vw - 88px));
+    max-width: 320px;
+    padding: 32px;
+
+    color: $color-default-white;
+
+    background-color: $color-night-rider;
+
+    transition:
+      visibility $trans--300,
+      opacity $trans--300,
+      transform $trans--300;
+
+    .main-nav.open & {
+      visibility: visible;
+      opacity: 1;
+
+      transform: translateX(100%);
+    }
+  }
+}
+
 .main-nav__list {
   @include reset-list;
 
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   display: flex;
   flex-wrap: wrap;
 
-  margin: 0 -20px;
+  margin: 0 auto;
   padding-top: 15px;
+
+  @include vp--1299 {
+    justify-content: flex-end;
+  }
+
+  @include vp--991 {
+    display: block;
+
+    padding: 0;
+    padding-bottom: 24px;
+  }
 }
 
 .main-nav__item {
   padding: 0 20px;
+
+  @include vp--991 {
+    padding: 0;
+
+    &:not(:last-child) {
+      padding-bottom: 8px;
+    }
+  }
 }
 
 .main-nav__link {
@@ -19,4 +138,62 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.21;
+
+  @include vp--991 {
+    display: block;
+    color: $color-default-white;
+  }
+}
+
+.main-nav__contact-list {
+  @include reset-list;
+
+  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  width: 350px;
+  padding-top: 15px;
+
+  @include vp--1299 {
+    width: unset;
+  }
+
+  @include vp--991 {
+    display: block;
+  }
+}
+
+.main-nav__contact-item {
+  padding-left: 20px;
+
+  @include vp--991 {
+    padding: 0;
+
+    &:not(:last-child) {
+      padding-bottom: 8px;
+    }
+  }
+}
+
+.main-nav__contact-link {
+  padding: 5px 0;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-transform: uppercase;
+
+  &.link--accent {
+    font-weight: 700;
+  }
+
+  @include vp--991 {
+    color: $color-default-white;
+
+    &.link--accent {
+      color: $color-pacific-blue;
+    }
+  }
 }

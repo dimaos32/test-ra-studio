@@ -7,18 +7,21 @@ mixin header(headerMods, currentPage)
       else
         a.header__logo(href="index.html", aria-label="Переход на главную")
           img(src="img/svg/logo-header.svg" width="200" height="111" alt="Логотип Platforma Home")
-      nav.main-nav
-        //- button.main-nav__toggle.btn-reset(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
-        //-   +icon("icon-burger", 20, 20)
+      nav.main-nav.header__main-nav
+        button.main-nav__toggle(type="button", aria-label="Переключатель отображения меню", aria-pressed="false")
+          .main-nav__toggle-line.main-nav__toggle-line--top
+          .main-nav__toggle-line.main-nav__toggle-line--middle
+          .main-nav__toggle-line.main-nav__toggle-line--bottom
+        .main-nav__overlay
         .main-nav__wrapper
           ul.main-nav__list
             each link in header.navLinks
               - const {href, text} = link
               li.main-nav__item
                 a.link.main-nav__link(href=href)=text
-      ul.header__contact-list
-        each link in header.contactLinks
-          - const {href, text} = link
-          - const mod = link.isAccent ? "link--accent" : ""
-          li.header__contact-item
-            a.link.header__contact-link(class=mod href=href)=text
+          ul.main-nav__contact-list
+            each link in header.contactLinks
+              - const {href, text} = link
+              - const mod = link.isAccent ? "link--accent" : ""
+              li.main-nav__contact-item
+                a.link.main-nav__contact-link(class=mod href=href)=text

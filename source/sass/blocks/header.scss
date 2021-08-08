@@ -20,35 +20,27 @@
 
   img {
     width: 200px;
-    height: 111px;
+  }
+
+  @include vp--991 {
+    margin-right: 50px;
+
+    img {
+      width: 150px;
+    }
+  }
+
+  @include vp--599 {
+    img {
+      width: 100px;
+    }
   }
 }
 
-.header__contact-list {
-  @include reset-list;
+.header__main-nav {
+  flex: 1 1 auto;
 
-  flex: 0 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-
-  width: 350px;
-  padding-top: 15px;
-}
-
-.header__contact-item {
-  padding-left: 20px;
-}
-
-.header__contact-link {
-  padding: 5px 0;
-
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
-  text-transform: uppercase;
-
-  &.link--accent {
-    font-weight: 700;
+  @include vp--991 {
+    flex: 0 0 auto;
   }
 }

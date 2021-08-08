@@ -4,12 +4,14 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 
 import {initModals} from './modules/modals/init-modals';
+import {initMobileMenu} from './modules/init-mobile-menu';
+import initAccordion from './modules/accordion';
 
 import {initIntroSlider} from './modules/sliders/intro-slider';
 import {initSeriesSlider} from './modules/sliders/series-slider';
 import {initVerticalPhotoSlider} from './modules/sliders/vertical-photo-slider';
 import {initPhotoSlider} from './modules/sliders/photo-slider';
-import initAccordion from './modules/accordion';
+
 
 // ---------------------------------
 
@@ -25,6 +27,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
 
+  initMobileMenu();
   initIntroSlider();
 
   // Modules

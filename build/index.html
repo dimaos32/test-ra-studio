@@ -72,7 +72,13 @@
     <div class="wrapper">
       <header class="header">
         <div class="container header__container"><a class="header__logo"><img src="img/svg/logo-header.svg" width="200" height="111" alt="Логотип Platforma Home"></a>
-          <nav class="main-nav">
+          <nav class="main-nav header__main-nav">
+            <button class="main-nav__toggle" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+              <div class="main-nav__toggle-line main-nav__toggle-line--top"></div>
+              <div class="main-nav__toggle-line main-nav__toggle-line--middle"></div>
+              <div class="main-nav__toggle-line main-nav__toggle-line--bottom"></div>
+            </button>
+            <div class="main-nav__overlay"></div>
             <div class="main-nav__wrapper">
               <ul class="main-nav__list">
                 <li class="main-nav__item"><a class="link main-nav__link" href="#conception">Концепция</a></li>
@@ -81,12 +87,12 @@
                 <li class="main-nav__item"><a class="link main-nav__link" href="#">Блог</a></li>
                 <li class="main-nav__item"><a class="link main-nav__link" href="#footer">Контакты</a></li>
               </ul>
+              <ul class="main-nav__contact-list">
+                <li class="main-nav__contact-item"><a class="link main-nav__contact-link" href="tel:+78123364500">+7 (812) 336-45-00</a></li>
+                <li class="main-nav__contact-item"><a class="link main-nav__contact-link link--accent" href="#">Обратиться к нам</a></li>
+              </ul>
             </div>
           </nav>
-          <ul class="header__contact-list">
-            <li class="header__contact-item"><a class="link header__contact-link" href="tel:+78123364500">+7 (812) 336-45-00</a></li>
-            <li class="header__contact-item"><a class="link header__contact-link link--accent" href="#">Обратиться к нам</a></li>
-          </ul>
         </div>
       </header>
       <main>

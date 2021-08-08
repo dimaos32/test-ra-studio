@@ -1,7 +1,5 @@
 .intro {
   position: relative;
-
-  min-height: 600px;
 }
 
 .intro__page-title {
@@ -11,6 +9,19 @@
   z-index: 2;
 
   width: 100%;
+
+  @include vp--1299 {
+    top: 180px;
+  }
+
+  @include vp--991 {
+    top: 120px;
+  }
+
+  @include vp--599 {
+    position: static;
+    padding-top: 24px;
+  }
 }
 
 .intro__logo {
@@ -21,6 +32,22 @@
     width: 100%;
     max-width: 617px;
   }
+
+  @include vp--1299 {
+    margin-bottom: 24px;
+
+    img {
+      max-width: 517px;
+    }
+  }
+
+  @include vp--991 {
+    margin-bottom: 8px;
+
+    img {
+      max-width: 295px;
+    }
+  }
 }
 
 .intro__title {
@@ -30,4 +57,19 @@
   font-size: 28px;
   line-height: 1.21;
   text-align: center;
+
+  @include vp--1299 {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  @include vp--991 {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+
+  @include vp--599 {
+    font-size: 12px;
+    line-height: 1.33;
+  }
 }
