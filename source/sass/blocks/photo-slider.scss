@@ -6,6 +6,12 @@
   @include reset-list;
 }
 
+.photo-slider__slide {
+  img {
+    width: 100%;
+  }
+}
+
 .photo-slider__controls {
   .round-slider-btn {
     position: absolute;
@@ -18,6 +24,12 @@
 
     &.next {
       right: 15px;
+    }
+  }
+
+  @include vp--599 {
+    .round-slider-btn {
+      top: calc(50% + 10px);
     }
   }
 }

@@ -1,5 +1,13 @@
 .faq {
   padding: 95px 0 190px;
+
+  @include vp--991 {
+    padding: 65px 0 130px;
+  }
+
+  @include vp--599 {
+    padding: 45px 0 90px;
+  }
 }
 
 .faq__title {
@@ -11,6 +19,20 @@
 
   &:not(:last-child) {
     margin-bottom: 90px;
+  }
+
+  @include vp--991 {
+    &:not(:last-child) {
+      margin-bottom: 65px;
+    }
+  }
+
+  @include vp--599 {
+    font-size: 36px;
+
+    &:not(:last-child) {
+      margin-bottom: 45px;
+    }
   }
 }
 
@@ -31,6 +53,7 @@
 
   width: 100%;
   padding: 22px 0;
+  padding-right: 101px;
 
   font-weight: 500;
   font-size: 20px;

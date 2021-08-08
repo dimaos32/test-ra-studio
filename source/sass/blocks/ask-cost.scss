@@ -4,6 +4,14 @@
   color: $color-default-white;
 
   background-color: $color-night-rider;
+
+  @include vp--991 {
+    padding: 80px 0 85px;
+  }
+
+  @include vp--599 {
+    padding: 40px 0 45px;
+  }
 }
 
 .ask-cost__title {
@@ -14,6 +22,12 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 1.22;
+
+  @include vp--599 {
+    font-size: 28px;
+    line-height: 1.29;
+    margin-bottom: 45px;
+  }
 }
 
 .ask-cost__form {
@@ -28,6 +42,15 @@
 
   &--last {
     margin-bottom: 42px;
+  }
+
+  @include vp--599 {
+    display: block;
+    margin-bottom: 30px;
+
+    &--last {
+      margin-bottom: 24px;
+    }
   }
 }
 
@@ -61,10 +84,22 @@
       border-color: $color-pacific-blue-2;
     }
   }
+
+  @include vp--599 {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
 }
 
 .ask-cost__input-file {
   margin-bottom: 70px;
+
+  @include vp--599 {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .ask-cost__label-file {
@@ -99,6 +134,10 @@
   align-items: center;
 
   max-width: 690px;
+
+  @include vp--599 {
+    display: block;
+  }
 }
 
 .ask-cost__submit-annotation {
@@ -107,6 +146,12 @@
   margin-right: 60px;
 
   color: $color-silver;
+
+  @include vp--599 {
+    max-width: 420px;
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
 }
 
 .ask-cost__submit-btn {

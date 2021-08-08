@@ -1,10 +1,22 @@
 .series {
   padding: 165px 0 200px;
+
+  @include vp--991 {
+    padding: 80px 0 95px;
+  }
+
+  @include vp--599 {
+    padding: 35px 0 45px;
+  }
 }
 
 .series__intro {
   max-width: 510px;
   margin-bottom: 65px;
+
+  @include vp--991 {
+    margin-bottom: 20px;
+  }
 }
 
 .series__title {
@@ -16,6 +28,14 @@
 
   &:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  @include vp--599 {
+    font-size: 36px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 }
 
