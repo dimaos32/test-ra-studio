@@ -1158,6 +1158,7 @@ button.swiper-pagination-bullet {
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -1426,7 +1427,7 @@ button,
   -ms-flex-pack: end;
   justify-content: flex-end;
   width: 350px;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .header__contact-item {
@@ -1549,7 +1550,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0 -20px;
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .main-nav__item {
@@ -1841,6 +1842,16 @@ button,
   transform: rotate(180deg);
 }
 
+.round-slider-btn--lg {
+  width: 50px;
+  height: 50px;
+}
+
+.round-slider-btn--lg svg {
+  width: 25px;
+  height: 14px;
+}
+
 .round-slider-btn:active {
   opacity: 0.7;
 }
@@ -1853,8 +1864,9 @@ button,
 .intro__page-title {
   position: absolute;
   top: 207px;
+  left: 0;
   z-index: 2;
-  width: calc(100% - 2 * 40px);
+  width: 100%;
 }
 
 .intro__logo {
@@ -1936,7 +1948,7 @@ button,
 
 .series__intro {
   max-width: 510px;
-  margin-bottom: 70px;
+  margin-bottom: 65px;
 }
 
 .series__title {
@@ -2283,6 +2295,7 @@ button,
   -ms-flex: 1 1 50%;
   flex: 1 1 50%;
   margin: 0;
+  margin: 10px 0;
   padding-left: 10px;
 }
 
@@ -2432,7 +2445,7 @@ button,
 .ask-cost__title {
   max-width: 1230px;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.22;
@@ -2448,11 +2461,11 @@ button,
   display: -ms-flexbox;
   display: flex;
   margin-right: -30px;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
 }
 
 .ask-cost__input-group--last {
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .ask-cost__input {
@@ -2464,7 +2477,7 @@ button,
 
 .ask-cost__input input {
   width: 100%;
-  padding: 8px 0;
+  padding: 6px 0;
   font: inherit;
   color: #f6f6f6;
   background-color: rgba(255, 255, 255, 0);
@@ -2578,8 +2591,8 @@ input:focus + .ask-cost__label-file {
 
 .partners__content {
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
+  -ms-flex: 1 1 calc(50% - 20px);
+  flex: 1 1 calc(50% - 20px);
   -ms-flex-item-align: start;
   align-self: flex-start;
 }
@@ -2599,6 +2612,10 @@ input:focus + .ask-cost__label-file {
   margin-bottom: 40px;
 }
 
+.partners__desc p {
+  margin: 0;
+}
+
 .partners__desc p:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -2608,12 +2625,15 @@ input:focus + .ask-cost__label-file {
   padding: 0;
   list-style: none;
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 50%;
-  flex: 1 1 50%;
+  -ms-flex: 1 1 calc(50% + 20px);
+  flex: 1 1 calc(50% + 20px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 -20px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin: 0 0;
 }
 
 .partners__item {
@@ -2673,11 +2693,11 @@ input:focus + .ask-cost__label-file {
   margin: 0;
   font-weight: 700;
   font-size: 48px;
-  line-height: 1.1%;
+  line-height: 1.1;
 }
 
 .faq__title:not(:last-child) {
-  margin-bottom: 85px;
+  margin-bottom: 90px;
 }
 
 .faq__questions {
@@ -2798,7 +2818,7 @@ input:focus + .ask-cost__label-file {
 }
 
 .more-about__content {
-  margin-top: 60px;
+  margin-top: 65px;
   padding-left: 180px;
 }
 

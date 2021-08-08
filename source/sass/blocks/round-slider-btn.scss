@@ -24,6 +24,16 @@
     }
   }
 
+  &--lg {
+    width: 50px;
+    height: 50px;
+
+    svg {
+      width: 25px;
+      height: 14px;
+    }
+  }
+
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,
     &:focus {

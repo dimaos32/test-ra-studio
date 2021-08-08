@@ -33,7 +33,7 @@ block main
             img(src="img/svg/logo-intro.svg" width="617" height="50" alt="Логотип Platforma Home")
           h1.intro__title=intro.title
 
-    section.series
+    section.series(id="series")
       .container
         .series__intro
           h2.series__title=series.title
@@ -49,7 +49,7 @@ block main
         button.btn-round.btn-round--control.video__play-btn(type="video" aria-label="Воспроизвести видео")
           +icon("icon-video-play", 15, 15)
 
-    section.custom-design
+    section.custom-design(id="conception")
       .container
         .custom-design__wrapper
           .custom-design__slider
