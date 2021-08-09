@@ -14,6 +14,10 @@
     <meta name="msapplication-TileColor" content="#00aba9">
     <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="fonts/montserrat-400.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-500.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-600.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-700.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -101,15 +105,30 @@
             <div class="intro-slider">
               <div class="intro-slider__wrapper swiper-container">
                 <ul class="intro-slider__slides swiper-wrapper">
-                  <li class="intro-slider__slide swiper-slide"><img src="img/slides/intro-slide1.jpg" srcset="img/slides/intro-slide1@2x.jpg 2x" width="1920" height="1000" alt="Дом, установленный в горах">
+                  <li class="intro-slider__slide swiper-slide">
+                    <picture>
+                      <source type="image/webp" srcset="img/slides/intro-slide1.webp, img/slides/intro-slide1@2x.webp 2x"><img src="img/slides/intro-slide1.jpg" srcset="img/slides/intro-slide1@2x.jpg 2x" width="1920" height="1000" alt="Дом, установленный в горах">
+                    </picture>
                   </li>
-                  <li class="intro-slider__slide swiper-slide"><img src="img/slides/intro-slide1.jpg" srcset="img/slides/intro-slide1@2x.jpg 2x" width="1920" height="1000" alt="Дом, установленный в горах">
+                  <li class="intro-slider__slide swiper-slide">
+                    <picture>
+                      <source type="image/webp" srcset="img/slides/intro-slide1.webp, img/slides/intro-slide1@2x.webp 2x"><img src="img/slides/intro-slide1.jpg" srcset="img/slides/intro-slide1@2x.jpg 2x" width="1920" height="1000" alt="Дом, установленный в горах">
+                    </picture>
                   </li>
-                  <li class="intro-slider__slide swiper-slide"><img src="img/slides/intro-slide1.jpg" srcset="img/slides/intro-slide1@2x.jpg 2x" width="1920" height="1000" alt="Дом, установленный в горах">
+                  <li class="intro-slider__slide swiper-slide">
+                    <picture>
+                      <source type="image/webp" srcset="img/slides/intro-slide1.webp, img/slides/intro-slide1@2x.webp 2x"><img src="img/slides/intro-slide1.jpg" srcset="img/slides/intro-slide1@2x.jpg 2x" width="1920" height="1000" alt="Дом, установленный в горах">
+                    </picture>
                   </li>
-                  <li class="intro-slider__slide swiper-slide"><img src="img/slides/intro-slide1.jpg" srcset="img/slides/intro-slide1@2x.jpg 2x" width="1920" height="1000" alt="Дом, установленный в горах">
+                  <li class="intro-slider__slide swiper-slide">
+                    <picture>
+                      <source type="image/webp" srcset="img/slides/intro-slide1.webp, img/slides/intro-slide1@2x.webp 2x"><img src="img/slides/intro-slide1.jpg" srcset="img/slides/intro-slide1@2x.jpg 2x" width="1920" height="1000" alt="Дом, установленный в горах">
+                    </picture>
                   </li>
-                  <li class="intro-slider__slide swiper-slide"><img src="img/slides/intro-slide1.jpg" srcset="img/slides/intro-slide1@2x.jpg 2x" width="1920" height="1000" alt="Дом, установленный в горах">
+                  <li class="intro-slider__slide swiper-slide">
+                    <picture>
+                      <source type="image/webp" srcset="img/slides/intro-slide1.webp, img/slides/intro-slide1@2x.webp 2x"><img src="img/slides/intro-slide1.jpg" srcset="img/slides/intro-slide1@2x.jpg 2x" width="1920" height="1000" alt="Дом, установленный в горах">
+                    </picture>
                   </li>
                 </ul>
               </div>
@@ -147,39 +166,66 @@
                   <ul class="series-slider__slides swiper-wrapper">
                     <li class="series-slider__slide swiper-slide"><a class="series-slider__link" href="#">
                         <h3 class="series-slider__title">Cabin</h3>
-                        <div class="series-slider__img"><img src="img/slides/series-slide1.jpg" srcset="img/slides/series-slide1@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                        <div class="series-slider__img">
+                          <picture>
+                            <source type="image/webp" srcset="img/slides/series-slide1.webp, img/slides/series-slide1@2x.webp 2x"><img src="img/slides/series-slide1.jpg" srcset="img/slides/series-slide1@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                          </picture>
                         </div></a></li>
                     <li class="series-slider__slide swiper-slide"><a class="series-slider__link" href="#">
                         <h3 class="series-slider__title">Патио</h3>
-                        <div class="series-slider__img"><img src="img/slides/series-slide2.jpg" srcset="img/slides/series-slide2@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                        <div class="series-slider__img">
+                          <picture>
+                            <source type="image/webp" srcset="img/slides/series-slide2.webp, img/slides/series-slide2@2x.webp 2x"><img src="img/slides/series-slide2.jpg" srcset="img/slides/series-slide2@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                          </picture>
                         </div></a></li>
                     <li class="series-slider__slide swiper-slide"><a class="series-slider__link" href="#">
                         <h3 class="series-slider__title">Зиг-заг</h3>
-                        <div class="series-slider__img"><img src="img/slides/series-slide3.jpg" srcset="img/slides/series-slide3@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                        <div class="series-slider__img">
+                          <picture>
+                            <source type="image/webp" srcset="img/slides/series-slide3.webp, img/slides/series-slide3@2x.webp 2x"><img src="img/slides/series-slide3.jpg" srcset="img/slides/series-slide3@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                          </picture>
                         </div></a></li>
                     <li class="series-slider__slide swiper-slide"><a class="series-slider__link" href="#">
                         <h3 class="series-slider__title">Cabin</h3>
-                        <div class="series-slider__img"><img src="img/slides/series-slide1.jpg" srcset="img/slides/series-slide1@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                        <div class="series-slider__img">
+                          <picture>
+                            <source type="image/webp" srcset="img/slides/series-slide1.webp, img/slides/series-slide1@2x.webp 2x"><img src="img/slides/series-slide1.jpg" srcset="img/slides/series-slide1@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                          </picture>
                         </div></a></li>
                     <li class="series-slider__slide swiper-slide"><a class="series-slider__link" href="#">
                         <h3 class="series-slider__title">Патио</h3>
-                        <div class="series-slider__img"><img src="img/slides/series-slide2.jpg" srcset="img/slides/series-slide2@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                        <div class="series-slider__img">
+                          <picture>
+                            <source type="image/webp" srcset="img/slides/series-slide2.webp, img/slides/series-slide2@2x.webp 2x"><img src="img/slides/series-slide2.jpg" srcset="img/slides/series-slide2@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                          </picture>
                         </div></a></li>
                     <li class="series-slider__slide swiper-slide"><a class="series-slider__link" href="#">
                         <h3 class="series-slider__title">Зиг-заг</h3>
-                        <div class="series-slider__img"><img src="img/slides/series-slide3.jpg" srcset="img/slides/series-slide3@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                        <div class="series-slider__img">
+                          <picture>
+                            <source type="image/webp" srcset="img/slides/series-slide3.webp, img/slides/series-slide3@2x.webp 2x"><img src="img/slides/series-slide3.jpg" srcset="img/slides/series-slide3@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                          </picture>
                         </div></a></li>
                     <li class="series-slider__slide swiper-slide"><a class="series-slider__link" href="#">
                         <h3 class="series-slider__title">Cabin</h3>
-                        <div class="series-slider__img"><img src="img/slides/series-slide1.jpg" srcset="img/slides/series-slide1@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                        <div class="series-slider__img">
+                          <picture>
+                            <source type="image/webp" srcset="img/slides/series-slide1.webp, img/slides/series-slide1@2x.webp 2x"><img src="img/slides/series-slide1.jpg" srcset="img/slides/series-slide1@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                          </picture>
                         </div></a></li>
                     <li class="series-slider__slide swiper-slide"><a class="series-slider__link" href="#">
                         <h3 class="series-slider__title">Патио</h3>
-                        <div class="series-slider__img"><img src="img/slides/series-slide2.jpg" srcset="img/slides/series-slide2@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                        <div class="series-slider__img">
+                          <picture>
+                            <source type="image/webp" srcset="img/slides/series-slide2.webp, img/slides/series-slide2@2x.webp 2x"><img src="img/slides/series-slide2.jpg" srcset="img/slides/series-slide2@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                          </picture>
                         </div></a></li>
                     <li class="series-slider__slide swiper-slide"><a class="series-slider__link" href="#">
                         <h3 class="series-slider__title">Зиг-заг</h3>
-                        <div class="series-slider__img"><img src="img/slides/series-slide3.jpg" srcset="img/slides/series-slide3@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                        <div class="series-slider__img">
+                          <picture>
+                            <source type="image/webp" srcset="img/slides/series-slide3.webp, img/slides/series-slide3@2x.webp 2x"><img src="img/slides/series-slide3.jpg" srcset="img/slides/series-slide3@2x.jpg 2x" width="510" height="400" alt="Дом, установленный в горах">
+                          </picture>
                         </div></a></li>
                   </ul>
                 </div>
@@ -196,7 +242,10 @@
         </section>
         <section class="video">
           <h2 class="visually-hidden">Видеообзор модульного дома</h2>
-          <div class="video__wrapper"><img src="img/content/video-cover.jpg" srcset="img/content/video-cover@2x.jpg 2x" width="1920" height="770" alt="Обложка к видео">
+          <div class="video__wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/content/video-cover.webp, img/content/video-cover@2x.webp 2x"><img src="img/content/video-cover.jpg" srcset="img/content/video-cover@2x.jpg 2x" width="1920" height="770" alt="Обложка к видео">
+            </picture>
             <button class="btn-round btn-round--control video__play-btn" type="video" aria-label="Воспроизвести видео">
               <svg width="15" height="15" aria-hidden="true">
                 <use xlink:href="#icon-video-play"></use>
@@ -211,15 +260,30 @@
                 <div class="vertical-photo-slider">
                   <div class="vertical-photo-slider__wrapper swiper-container">
                     <ul class="vertical-photo-slider__slides swiper-wrapper">
-                      <li class="vertical-photo-slider__slide swiper-slide"><img src="img/slides/custom-design-slide1.jpg" srcset="img/slides/custom-design-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                      <li class="vertical-photo-slider__slide swiper-slide">
+                        <picture>
+                          <source type="image/webp" srcset="img/slides/custom-design-slide1.webp, img/slides/custom-design-slide1@2x.webp 2x"><img src="img/slides/custom-design-slide1.jpg" srcset="img/slides/custom-design-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                        </picture>
                       </li>
-                      <li class="vertical-photo-slider__slide swiper-slide"><img src="img/slides/custom-design-slide1.jpg" srcset="img/slides/custom-design-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                      <li class="vertical-photo-slider__slide swiper-slide">
+                        <picture>
+                          <source type="image/webp" srcset="img/slides/custom-design-slide1.webp, img/slides/custom-design-slide1@2x.webp 2x"><img src="img/slides/custom-design-slide1.jpg" srcset="img/slides/custom-design-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                        </picture>
                       </li>
-                      <li class="vertical-photo-slider__slide swiper-slide"><img src="img/slides/custom-design-slide1.jpg" srcset="img/slides/custom-design-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                      <li class="vertical-photo-slider__slide swiper-slide">
+                        <picture>
+                          <source type="image/webp" srcset="img/slides/custom-design-slide1.webp, img/slides/custom-design-slide1@2x.webp 2x"><img src="img/slides/custom-design-slide1.jpg" srcset="img/slides/custom-design-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                        </picture>
                       </li>
-                      <li class="vertical-photo-slider__slide swiper-slide"><img src="img/slides/custom-design-slide1.jpg" srcset="img/slides/custom-design-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                      <li class="vertical-photo-slider__slide swiper-slide">
+                        <picture>
+                          <source type="image/webp" srcset="img/slides/custom-design-slide1.webp, img/slides/custom-design-slide1@2x.webp 2x"><img src="img/slides/custom-design-slide1.jpg" srcset="img/slides/custom-design-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                        </picture>
                       </li>
-                      <li class="vertical-photo-slider__slide swiper-slide"><img src="img/slides/custom-design-slide1.jpg" srcset="img/slides/custom-design-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                      <li class="vertical-photo-slider__slide swiper-slide">
+                        <picture>
+                          <source type="image/webp" srcset="img/slides/custom-design-slide1.webp, img/slides/custom-design-slide1@2x.webp 2x"><img src="img/slides/custom-design-slide1.jpg" srcset="img/slides/custom-design-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                        </picture>
                       </li>
                     </ul>
                   </div>
@@ -243,7 +307,10 @@
               <p class="production__desc">PLATforma входит в холдинг «ПНСК». Производство расположено в Санкт‑Петербурге, завод общей площадью более 12 га. Основные критерии выбора «ПНСК» — это опыт, профессионализм и безупречная репутация.</p>
             </div>
           </div>
-          <div class="production__cover"><img src="img/content/bg-production.jpg" srcset="img/content/bg-production@2x.jpg 2x" width="1920" height="750" alt="Производственный комплекс PLATforma">
+          <div class="production__cover">
+            <picture>
+              <source type="image/webp" srcset="img/content/bg-production.webp, img/content/bg-production@2x.webp 2x"><img src="img/content/bg-production.jpg" srcset="img/content/bg-production@2x.jpg 2x" width="1920" height="750" alt="Производственный комплекс PLATforma">
+            </picture>
           </div>
           <div class="production__features-wrapper">
             <div class="container">
@@ -294,9 +361,15 @@
               <div class="photo-slider">
                 <div class="photo-slider__wrapper swiper-container">
                   <ul class="photo-slider__slides swiper-wrapper">
-                    <li class="photo-slider__slide swiper-slide"><img src="img/slides/exclusive-design-slide1.jpg" srcset="img/slides/exclusive-design-slide1@2x.jpg 2x" width="790" height="450" alt="Пример эксклюзивного дизайна">
+                    <li class="photo-slider__slide swiper-slide">
+                      <picture>
+                        <source type="image/webp" srcset="img/slides/exclusive-design-slide1.webp, img/slides/exclusive-design-slide1@2x.webp 2x"><img src="img/slides/exclusive-design-slide1.jpg" srcset="img/slides/exclusive-design-slide1@2x.jpg 2x" width="790" height="450" alt="Пример эксклюзивного дизайна">
+                      </picture>
                     </li>
-                    <li class="photo-slider__slide swiper-slide"><img src="img/slides/exclusive-design-slide1.jpg" srcset="img/slides/exclusive-design-slide1@2x.jpg 2x" width="790" height="450" alt="Пример эксклюзивного дизайна">
+                    <li class="photo-slider__slide swiper-slide">
+                      <picture>
+                        <source type="image/webp" srcset="img/slides/exclusive-design-slide1.webp, img/slides/exclusive-design-slide1@2x.webp 2x"><img src="img/slides/exclusive-design-slide1.jpg" srcset="img/slides/exclusive-design-slide1@2x.jpg 2x" width="790" height="450" alt="Пример эксклюзивного дизайна">
+                      </picture>
                     </li>
                   </ul>
                 </div>
@@ -382,15 +455,30 @@
                 <div class="vertical-photo-slider">
                   <div class="vertical-photo-slider__wrapper swiper-container">
                     <ul class="vertical-photo-slider__slides swiper-wrapper">
-                      <li class="vertical-photo-slider__slide swiper-slide"><img src="img/slides/production-about-slide1.jpg" srcset="img/slides/production-about-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                      <li class="vertical-photo-slider__slide swiper-slide">
+                        <picture>
+                          <source type="image/webp" srcset="img/slides/production-about-slide1.webp, img/slides/production-about-slide1@2x.webp 2x"><img src="img/slides/production-about-slide1.jpg" srcset="img/slides/production-about-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                        </picture>
                       </li>
-                      <li class="vertical-photo-slider__slide swiper-slide"><img src="img/slides/production-about-slide1.jpg" srcset="img/slides/production-about-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                      <li class="vertical-photo-slider__slide swiper-slide">
+                        <picture>
+                          <source type="image/webp" srcset="img/slides/production-about-slide1.webp, img/slides/production-about-slide1@2x.webp 2x"><img src="img/slides/production-about-slide1.jpg" srcset="img/slides/production-about-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                        </picture>
                       </li>
-                      <li class="vertical-photo-slider__slide swiper-slide"><img src="img/slides/production-about-slide1.jpg" srcset="img/slides/production-about-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                      <li class="vertical-photo-slider__slide swiper-slide">
+                        <picture>
+                          <source type="image/webp" srcset="img/slides/production-about-slide1.webp, img/slides/production-about-slide1@2x.webp 2x"><img src="img/slides/production-about-slide1.jpg" srcset="img/slides/production-about-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                        </picture>
                       </li>
-                      <li class="vertical-photo-slider__slide swiper-slide"><img src="img/slides/production-about-slide1.jpg" srcset="img/slides/production-about-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                      <li class="vertical-photo-slider__slide swiper-slide">
+                        <picture>
+                          <source type="image/webp" srcset="img/slides/production-about-slide1.webp, img/slides/production-about-slide1@2x.webp 2x"><img src="img/slides/production-about-slide1.jpg" srcset="img/slides/production-about-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                        </picture>
                       </li>
-                      <li class="vertical-photo-slider__slide swiper-slide"><img src="img/slides/production-about-slide1.jpg" srcset="img/slides/production-about-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                      <li class="vertical-photo-slider__slide swiper-slide">
+                        <picture>
+                          <source type="image/webp" srcset="img/slides/production-about-slide1.webp, img/slides/production-about-slide1@2x.webp 2x"><img src="img/slides/production-about-slide1.jpg" srcset="img/slides/production-about-slide1@2x.jpg 2x" width="680" height="500" alt="Дом, установленный в горах">
+                        </picture>
                       </li>
                     </ul>
                   </div>
@@ -459,7 +547,10 @@
         </section>
         <section class="more-about">
           <div class="container more-about__container">
-            <div class="more-about__img"><img src="img/content/know-more.jpg" srcset="img/content/know-more@2x.jpg 2x" width="680" height="400" alt="Модульный дом на берегу озера">
+            <div class="more-about__img">
+              <picture>
+                <source type="image/webp" srcset="img/content/know-more.webp, img/content/know-more@2x.webp 2x"><img src="img/content/know-more.jpg" srcset="img/content/know-more@2x.jpg 2x" width="680" height="400" alt="Модульный дом на берегу озера">
+              </picture>
             </div>
             <div class="more-about__content">
               <h2 class="more-about__title">Хотели бы узнать больше?</h2><a class="btn-round btn-round--transparent" href="#"><span>Обратиться к нам</span></a>

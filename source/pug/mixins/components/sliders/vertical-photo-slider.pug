@@ -5,6 +5,6 @@ mixin vertical-photo-slider(slides)
         each slide in slides
           - const {path, name, type, altText} = slide
           li.vertical-photo-slider__slide.swiper-slide
-            +img(path, name, type, 680, 500, altText)
+            +picture(path, name, type, 680, 500, altText)
     .vertical-photo-slider__controls
       .vertical-photo-slider__pagination

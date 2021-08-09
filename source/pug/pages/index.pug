@@ -45,7 +45,7 @@ block main
     section.video
       h2.visually-hidden=video.title
       .video__wrapper
-        +img(video.cover.path, video.cover.name, video.cover.type, 1920, 770, video.cover.altText)
+        +picture(video.cover.path, video.cover.name, video.cover.type, 1920, 770, video.cover.altText)
         button.btn-round.btn-round--control.video__play-btn(type="video" aria-label="Воспроизвести видео")
           +icon("icon-video-play", 15, 15)
 
@@ -65,7 +65,7 @@ block main
           h2.production__title=production.title
           p.production__desc=production.desc
       .production__cover
-        +img(production.cover.path, production.cover.name, production.cover.type, 1920, 750, production.cover.altText)
+        +picture(production.cover.path, production.cover.name, production.cover.type, 1920, 750, production.cover.altText)
       .production__features-wrapper
         .container
           ul.production__features
@@ -159,10 +159,8 @@ block main
     section.more-about
       .container.more-about__container
         .more-about__img
-          +img(moreAbout.img.path, moreAbout.img.name, moreAbout.img.type, 680, 400, moreAbout.img.altText)
+          +picture(moreAbout.img.path, moreAbout.img.name, moreAbout.img.type, 680, 400, moreAbout.img.altText)
         .more-about__content
           h2.more-about__title=moreAbout.title
           a.btn-round.btn-round--transparent(href=moreAbout.btn.href)
             span=moreAbout.btn.text
-
-block modals

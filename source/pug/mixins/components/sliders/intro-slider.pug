@@ -5,7 +5,7 @@ mixin intro-slider(slides)
         each slide in slides
           - const {path, name, type, altText} = slide
           li.intro-slider__slide.swiper-slide
-            +img(path, name, type, 1920, 1000, altText)
+            +picture(path, name, type, 1920, 1000, altText)
     .intro-slider__controls
       +round-slider-btn(false)
       .intro-slider__pagination

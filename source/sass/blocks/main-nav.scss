@@ -4,12 +4,20 @@
   display: none;
 
   position: relative;
+  z-index: 11;
 
   width: 40px;
   height: 40px;
 
   background-color: $color-night-rider;
   border-radius: 50%;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      background-color: $color-pacific-blue;
+    }
+  }
 
   @include vp--991 {
     display: block;
@@ -29,12 +37,30 @@
 
   background-color: $color-default-white;
 
+  transition:
+    opacity $trans--300,
+    transform $trans--300;
+
   &--top {
     transform: translate(-50%, calc(-50% - 6px));
   }
 
   &--bottom {
     transform: translate(-50%, calc(-50% + 6px));
+  }
+
+  .main-nav.open & {
+    &--top {
+      transform: translate(-50%, calc(-50%)) rotate(45deg);
+    }
+
+    &--middle {
+      opacity: 0;
+    }
+
+    &--bottom {
+      transform: translate(-50%, calc(-50%)) rotate(-45deg);
+    }
   }
 }
 
@@ -194,6 +220,13 @@
 
     &.link--accent {
       color: $color-pacific-blue;
+
+      @media (hover: hover), screen and (min-width: 0\0) {
+        &[href]:hover,
+        &:focus {
+          color: $color-default-white;
+        }
+      }
     }
   }
 }

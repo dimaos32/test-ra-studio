@@ -7,11 +7,12 @@ const initVerticalPhotoSlider = () => {
 
   sliders.forEach((slider) => {
     const wrapper = slider.querySelectorAll('.vertical-photo-slider__wrapper');
+    const pagination = slider.querySelectorAll('.vertical-photo-slider__pagination');
     const swiper = new Swiper(wrapper, {
       loop: true,
       direction: 'vertical',
       pagination: {
-        el: '.vertical-photo-slider__pagination',
+        el: pagination,
         clickable: true,
         renderBullet: (index, className) => {
           return index + 1 < 10 ?
