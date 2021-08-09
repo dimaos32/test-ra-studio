@@ -1,7 +1,0 @@
-mixin round-slider-btn(isNext = false, size)
-  - let classes = isNext ? "next" : "prev"
-  - const ariaLabel = isNext ? "Следующий слайд" : "Предыдущий слайд"
-  if size
-    - classes += ` round-slider-btn--${size}`
-  button.round-slider-btn(class=classes type="button" aria-label=ariaLabel)
-    +icon("icon-arrow", 21, 12)
